@@ -23,7 +23,7 @@ class Gnuradio < Formula
   depends_on 'libusb'
   depends_on 'orc'
   depends_on 'pyqt' if ARGV.include?('--with-qt')
-  depends_on 'pyqwt' if ARGV.include?('--with-qt')
+  depends_on 'qwt' if ARGV.include?('--with-qt')
   depends_on 'doxygen' if ARGV.include?('--with-docs')
 
   fails_with :clang do
